@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidanalysis.lifecyclesample.FragmentA"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:focusable="true">
+
+
+
+    <Button
+        android:id="@+id/addFragStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Frag On Stack"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/addFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Frag W/o Stack"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/replaceFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replace Frag"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
