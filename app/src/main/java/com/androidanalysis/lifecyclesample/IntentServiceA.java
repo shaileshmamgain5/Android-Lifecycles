@@ -28,18 +28,25 @@ public class IntentServiceA extends IntentService {
     protected void onHandleIntent(Intent intent) {
 
         Log.i(className,  " : onHandleIntent");
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
     /** Called when the service is being created. */
     @Override
     public void onCreate() {
+        super.onCreate();
         Log.i(className,  " : onCreate");
     }
 
     /** The service is starting, due to a call to startService() */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent, flags, startId);
         Log.i(className,  " : onStartCommand");
         return mStartMode;
 
@@ -68,6 +75,7 @@ public class IntentServiceA extends IntentService {
     /** Called when The service is no longer used and is being destroyed */
     @Override
     public void onDestroy() {
+        super.onDestroy();
         Log.i(className,  " : onDestroy");
 
     }
